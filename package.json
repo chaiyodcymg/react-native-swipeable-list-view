@@ -1,7 +1,7 @@
 {
   "name": "react-native-swipeable-list-view",
   "version": "0.1.0",
-  "description": "test",
+  "description": "React native swipeable list view component",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
@@ -38,7 +38,9 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "swipeable",
+    "swipeable-list"
   ],
   "repository": "https://github.com/chaiyodcymg/react-native-swipeable-list-view",
   "author": "Chaiyod Malingam <chaiyod.cymg@gmail.com> (https://github.com/chaiyodcymg)",
@@ -51,8 +53,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "@evilmartians/lefthook": "^1.2.2",
     "@commitlint/config-conventional": "^17.0.2",
+    "@evilmartians/lefthook": "^1.2.2",
     "@react-native-community/eslint-config": "^3.0.2",
     "@release-it/conventional-changelog": "^5.0.0",
     "@types/jest": "^28.1.2",
@@ -66,9 +68,11 @@
     "jest": "^28.1.1",
     "pod-install": "^0.1.0",
     "prettier": "^2.0.5",
+    "prop-types": "^15.8.1",
     "react": "18.1.0",
     "react-native": "0.70.5",
     "react-native-builder-bob": "^0.20.3",
+    "react-native-gesture-handler": "^2.8.0",
     "release-it": "^15.0.0",
     "typescript": "^4.5.2"
   },
