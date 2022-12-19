@@ -2,10 +2,11 @@ import React from 'react';
 import {
   StyleSheet,
   Text,
-  View,
+  SafeAreaView,
   TouchableOpacity,
   Image,
   Alert,
+  View
 } from 'react-native';
 
 import Swipelist from 'react-native-swipeable-list-view';
@@ -24,7 +25,7 @@ const data = [
 
 const App = () => {
   return (
-    <View>
+    <SafeAreaView>
       <Swipelist
         data={data}
         renderRightItem={(data, index) => (
@@ -62,7 +63,7 @@ const App = () => {
         )}
         rightOpenValue={200}
       />
-    </View>
+    </SafeAreaView>
   );
 };
 
@@ -71,7 +72,6 @@ const styles = StyleSheet.create({
     height: 60,
     marginVertical: 10,
     backgroundColor: '#ffffff',
-
     justifyContent: 'center',
     paddingLeft: 10,
     shadowColor: '#000',
@@ -81,7 +81,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
-
     elevation: 5,
   },
 
@@ -100,7 +99,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
-
     elevation: 5,
   },
 });

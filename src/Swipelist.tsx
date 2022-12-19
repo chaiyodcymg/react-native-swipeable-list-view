@@ -24,7 +24,7 @@ const Swipelist: React.FC<SwipelistProps> = ({
   onSwipelistOpen,
   onSwipelistClose,
 }) => {
-  const renderAction = (progress: any, item: any, index: number) => {
+  const renderRightAction = (progress: any, item: any, index: number) => {
     const transLeft = progress.interpolate({
       inputRange: [0, 1],
       outputRange: [rightOpenValue, 1],
@@ -49,12 +49,13 @@ const Swipelist: React.FC<SwipelistProps> = ({
             <GestureHandlerRootView>
               <Swipeable
                 renderRightActions={(progress) =>
-                  renderAction(progress, item, index)
+                  renderRightAction(progress, item, index)
                 }
                 onSwipeableOpen={onSwipelistOpen}
                 onSwipeableClose={onSwipelistClose}
                 friction={friction}
                 overshootRight={overshootRight}
+                // rightThreshold={200}
               >
                 {renderRightItem(item, index)}
               </Swipeable>
