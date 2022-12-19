@@ -1,6 +1,6 @@
 {
   "name": "react-native-swipeable-list-view",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React native swipeable list view component",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
