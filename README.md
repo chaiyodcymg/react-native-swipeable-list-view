@@ -143,11 +143,11 @@ Prop | Default | Type | Description
  data | - | array |  objects to be passed into the renderItem and renderHiddenItem functions **(is Required)**. |
  renderRightItem | - | function | 	How to render a row. Should return a valid React Element **(is Required)**. |
  renderHiddenItem | - | function | How to render a hidden row in a List (renders behind the row). Should return a valid React Element **(is Required)**. |
-rightOpenValue | - | number | TranslateX value for opening the row to the right (positive number) **(is Required)**. |
+rightOpenValue | 200 | number | TranslateX value for opening the row to the right (positive number) **(is Required)**. |
  onSwipelistOpen | - | function | Called when row gets open. |
  onSwipelistClose | - | function | Called when row is closed. |
- overshootRight | - | boolean | a boolean value indicating if the swipeable row can be pulled further than the right actions row width.  It is set to false by default. |
- friction | - | number | a number that specifies how much the visual interaction will be delayed compared to the gesture distance. e.g. value of 1 will indicate that the swipeable panel should exactly follow the gesture, 2 means it is going to be two times "slower". |
+ overshootRight | false | boolean | a boolean value indicating if the swipeable row can be pulled further than the right actions row width. |
+ friction | 1 | number | a number that specifies how much the visual interaction will be delayed compared to the gesture distance. e.g. value of 1 will indicate that the swipeable panel should exactly follow the gesture, 2 means it is going to be two times "slower". |
 
 
 
